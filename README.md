@@ -8,8 +8,14 @@ Secondly, the next part is deep video inpainting which helps us to complete our 
 ### Setup python environment
 ```
 conda create -n siammask python=3.6
+```
+```
 source activate siammask
+```
+```
 pip install -r requirements.txt
+```
+```
 bash make.sh
 ```
 
@@ -20,7 +26,11 @@ export PYTHONPATH=$PWD:$PYTHONPATH
 ### Download the SiamMask model
 ```
 cd $SiamMask/experiments/siammask_sharp
+```
+```
 wget http://www.robots.ox.ac.uk/~qwang/SiamMask_VOT.pth
+```
+```
 wget http://www.robots.ox.ac.uk/~qwang/SiamMask_DAVIS.pth
 ```
 
@@ -32,7 +42,11 @@ wget http://www.robots.ox.ac.uk/~qwang/SiamMask_DAVIS.pth
 ### Run demo.py
 ```
 cd $SiamMask/experiments/siammask_sharp
+```
+```
 export PYTHONPATH=$PWD:$PYTHONPATH
+```
+```
 python ../../tools/demo.py --resume SiamMask_DAVIS.pth --config config_davis.json
 ```
 
@@ -46,5 +60,5 @@ python3 train.py --train_mode DIP-Vid-Flow --video_path data/bmx-trees.avi --mas
 ```
 
 # Links:
+### Linked in:https://www.linkedin.com/posts/karthikeyanthanigai_csebennett-leadingindiaai-activity-6615838390803886080-GSP_ 
 ### Youtube:https://youtu.be/5QCMeVwYcTA
-### Linked in:https://www.linkedin.com/posts/karthikeyanthanigai_csebennett-leadingindiaai-activity-6615838390803886080-GSP_
